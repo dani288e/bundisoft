@@ -26,5 +26,12 @@ namespace Bundisoft.Controllers
 
             return View();
         }
+
+        public ActionResult Projects()
+        {
+            //ViewBag.Message = "Your projects page.";
+
+            return View();
+        }
     }
 }
