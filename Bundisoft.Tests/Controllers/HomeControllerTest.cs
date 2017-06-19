@@ -35,7 +35,8 @@ namespace Bundisoft.Tests.Controllers
             ViewResult result = controller.About() as ViewResult;
 
             // Assert
-            Assert.AreEqual("Your application description page.", result.ViewBag.Message);
+            Assert.IsNotNull(result);
+            //Assert.AreEqual("Bundisoft is a software company founded by Daniel Holm in 2017. We create games and software for mobile platforms.", result.ViewBag.Message);
         }
 
         [TestMethod]
